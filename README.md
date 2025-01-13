@@ -30,4 +30,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source007 [https://rss-bridge.org/bridge01/?action=display&bridge=ReutersBridge&feed=home/topnews&format=Atom](https://rss-bridge.org/bridge01/?action=display&bridge=ReutersBridge&feed=home/topnews&format=Atom) -> [economist latest_rss.xml](rss/economist%20latest_rss.xml)
  - source008 [https://rss-bridge.org/bridge01/?action=display&bridge=EconomistWorldInBriefBridge&limit=100&agenda=on&agendaPictures=on&format=Atom](https://rss-bridge.org/bridge01/?action=display&bridge=EconomistWorldInBriefBridge&limit=100&agenda=on&agendaPictures=on&format=Atom) -> [economist this week_rss.xml](rss/economist%20this%20week_rss.xml)
  - source009 [https://www.kali.org/rss.xml](https://www.kali.org/rss.xml) -> [kali.xml](rss/kali.xml)
- - source010 [https://www.v2ex.com/index.xml](https://www.v2ex.com/index.xml) -> [v2ex.xml](rss/v2ex.xml)
+ - source010 [http://fetchrss.com/rss/620d11a970b7d178132426226774bd2f143c9ce271003ea2.xml](http://fetchrss.com/rss/620d11a970b7d178132426226774bd2f143c9ce271003ea2.xml) -> [v2ex.xml](rss/v2ex.xml)
