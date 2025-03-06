@@ -5,7 +5,7 @@ on:
   # Triggers the workflow on a schedule (every day at 02:43 UTC)
   schedule:
     - cron: '43 2 * * *'
-  # Allows manual triggering from the Actions tab
+   - cron: '16 14 * * *'
   workflow_dispatch:
 
 jobs:
