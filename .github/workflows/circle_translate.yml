@@ -36,7 +36,12 @@ jobs:
           python main2.py
           python .github/cron_random.py
           ls -al rss/
-
+      - name: Upload RSS artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: rss-files
+          path: rss/
+          
       # Commit and push changes
       - name: Push changes
         env:
