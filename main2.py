@@ -1,163 +1,136 @@
-# coding:utf-8 
+# coding:utf-8
 import configparser
 from pygtrans import Translate
-from bs4 import BeautifulSoup
-import sys
 import os
-from urllib import request, parse
-import urllib
-# pip install pygtrans -i https://pypi.org/simple
-# ref:https://zhuanlan.zhihu.com/p/390801784
-# ref:https://beautifulsoup.readthedocs.io/zh_CN/latest/
-# ref:https://pygtrans.readthedocs.io/zh_CN/latest/langs.html
-# client = Translate()
-# text = client.translate('Google Translate')
-# print(text.translatedText)  # 谷歌翻译
 import hashlib
-def get_md5_value(src):
-    _m = hashlib.md5()
-    _m.update(src.encode('utf-8'))
-    return _m.hexdigest()
-
 import datetime
 import time
 from rfeed import *
 import feedparser
-def getTime(e):
+from urllib import parse
+
+# 计算字符串的 MD5 值
+def get_md5_value(src):
+    return hashlib.md5(src.encode('utf-8')).hexdigest()
+
+# 获取 RSS 条目的发布时间
+def get_time(entry):
     try:
-        struct_time =e.published_parsed
-    except:
-        struct_time =time.localtime()
-    return datetime.datetime(*struct_time[:6])
-def getSubtitle(e):
-    try:
-        sub =e.subtitle
-    except:
-        sub =""
-    return sub
+        return datetime.datetime(*entry.published_parsed[:6])
+    except (AttributeError, TypeError):
+        return datetime.datetime.now()
+
+# 获取 RSS 源的副标题
+def get_subtitle(feed):
+    return getattr(feed, 'subtitle', '')
+
 class GoogleTran:
-    def __init__(self, url,  source  = 'auto', target  = 'zh-CN'):
+    def __init__(self, url, source='auto', target='zh-CN'):
         self.url = url
-        self.source= source
-        self.target=target
-
-        self.d = feedparser.parse(url)
-        self.GT = Translate()
-    
-    def tr(self,content):
-        if self.source=='proxy': #代理
-            return content
-        tt = self.GT.translate(content,target=self.target,source=self.source)
+        self.source = source
+        self.target = target
+        self.client = Translate()
         try:
-            return tt.translatedText
-        except:
+            self.feed = feedparser.parse(url)
+        except Exception as e:
+            print(f"Error parsing RSS feed {url}: {e}")
+            self.feed = None
+
+    def translate(self, content):
+        if not content or self.source == 'proxy':
+            return content
+        try:
+            result = self.client.translate(content, target=self.target, source=self.source)
+            return result.translatedText if result else ""
+        except Exception as e:
+            print(f"Translation error: {e}")
             return ""
-    
-    def get_newconent(self,max=2):
+
+    def get_new_content(self, max_items=2):
+        if not self.feed or not self.feed.entries:
+            return None
         item_list = []
-        if len(self.d.entries) < max:
-            max = len(self.d.entries)
-        for entry in self.d.entries[:max]:
-            one = Item(
-                title=self.tr(entry.title),
+        max_items = min(max_items, len(self.feed.entries))
+        for entry in self.feed.entries[:max_items]:
+            item = Item(
+                title=self.translate(entry.title),
                 link=entry.link,
-                description=self.tr(entry.summary),
+                description=self.translate(entry.summary),
                 guid=Guid(entry.link),
-                pubDate=getTime(entry))
-            item_list += [one]
-        feed=self.d.feed
-        newfeed = Feed(
-            title=self.tr(feed.title),
+                pubDate=get_time(entry)
+            )
+            item_list.append(item)
+        feed = self.feed.feed
+        new_feed = Feed(
+            title=self.translate(feed.title),
             link=feed.link,
-            description=self.tr(getSubtitle(feed)),
-            lastBuildDate=getTime(feed),
-            items=item_list)
-        return newfeed.rss()
+            description=self.translate(get_subtitle(feed)),
+            lastBuildDate=get_time(feed),
+            items=item_list
+        )
+        return new_feed.rss()
 
-
-
-with open('test.ini', mode = 'r') as f:
+# 读取和解析 test.ini
+with open('test.ini', 'r', encoding='utf-8') as f:
     ini_data = parse.unquote(f.read())
 config = configparser.ConfigParser()
 config.read_string(ini_data)
-secs=config.sections()
+sections = config.sections()
 
+def get_cfg(section, key):
+    return config.get(section, key).strip('"')
 
+def set_cfg(section, key, value):
+    config[section][key] = f'"{value}"'
 
-def get_cfg(sec,name):
-    return config.get(sec,name).strip('"')
+def get_translation_config(section):
+    action = get_cfg(section, 'action')
+    return ('proxy', 'proxy') if action == 'proxy' else action.split('->') if '->' in action else ('auto', 'zh-CN')
 
-def set_cfg(sec,name,value):
-    config[sec][name]='"%s"'%value
+# 创建输出目录
+BASE = get_cfg('cfg', 'base')
+os.makedirs(BASE, exist_ok=True)
 
-def get_cfg_tra(sec):
-    cc=config.get(sec,"action").strip('"')
-    target=""
-    source=""
-    if cc == "auto":
-        source  = 'auto'
-        target  = 'zh-CN'
-        
-    elif cc == "proxy":
-        source  = 'proxy'
-        target  = 'proxy'
-    else:
-        source  = cc.split('->')[0]
-        target  = cc.split('->')[1]
-    return source,target
-
-
-BASE=get_cfg("cfg",'base')
-try:
-    os.makedirs(BASE)
-except:
-    pass
-links=[]
-def tran(sec):
-    out_dir= BASE + get_cfg(sec,'name')
-    url=get_cfg(sec,'url')
-    max_item=int(get_cfg(sec,'max'))
-    old_md5=get_cfg(sec,'md5')
-    source,target=get_cfg_tra(sec)
+links = []
+def process_section(section):
+    name = get_cfg(section, 'name')
+    out_dir = os.path.join(BASE, name)
+    url = get_cfg(section, 'url')
+    max_items = int(get_cfg(section, 'max'))
+    source, target = get_translation_config(section)
+    
     global links
-
-    links+=[" - %s [%s](%s) -> [%s](%s)\n"%(sec,url,(url),get_cfg(sec,'name'),parse.quote(out_dir))]
-
-    # new_md5= get_md5_value(url) # no use now
-
-    # if old_md5 == new_md5:
-    #     return
-    # else:
-    #     set_cfg(sec,'md5',new_md5)
+    links.append(f" - {section} [{url}]({url}) -> [{name}]({parse.quote(out_dir)})\n")
     
-    c = GoogleTran(url,target=target,source=source).get_newconent(max=max_item)
-    
+    translator = GoogleTran(url, source=source, target=target)
+    content = translator.get_new_content(max_items)
+    if content:
+        with open(out_dir, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"Translated: {url} > {out_dir}")
+    else:
+        print(f"Skipped {url} due to fetch or translation failure")
 
-    with open(out_dir,'w',encoding='utf-8') as f:
+# 处理每个 RSS 源
+for section in sections[1:]:
+    process_section(section)
+    print(config.items(section))
 
-        f.write(c)
-        #print(c)
-        #f.write(content)
-    print("GT: "+ url +" > "+ out_dir)
-
-for x in secs[1:]:
-    tran(x)
-    print(config.items(x))
-
-with open('test.ini','w') as configfile:
+# 保存更新后的配置
+with open('test.ini', 'w', encoding='utf-8') as configfile:
     config.write(configfile)
 
-
-def get_idx(l):
-    for idx,line in enumerate(l):
+# 更新 README.md
+def update_readme(file_path="README.md"):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    for idx, line in enumerate(lines):
         if "## rss translate links" in line:
-            return idx+2
-YML="README.md"
+            break
+    else:
+        idx = len(lines)
+    new_lines = lines[:idx + 2] + links
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(new_lines)
 
-f = open(YML, "r+", encoding="UTF-8")
-list1 = f.readlines()           
-list1= list1[:get_idx(list1)] + links
-
-f = open(YML, "w+", encoding="UTF-8")
-f.writelines(list1)
-f.close()
+update_readme()
