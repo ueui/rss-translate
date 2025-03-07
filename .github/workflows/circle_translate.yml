@@ -5,7 +5,7 @@ on:
   # Triggers the workflow on a schedule (every day at 02:43 UTC)
   schedule:
     - cron: '43 2 * * *'
-  workflow_dispatch:
+   - cron: '14 1 * * *'
 
 jobs:
   build:
