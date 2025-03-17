@@ -5,6 +5,8 @@ on:
   # Triggers the workflow on a schedule (every day at 02:43 UTC)
   schedule:
     - cron: '0 */6 * * *'
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
