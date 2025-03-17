@@ -4,8 +4,7 @@ name: circle_translate
 on:
   # Triggers the workflow on a schedule (every day at 02:43 UTC)
   schedule:
-    - cron: '43 2 * * *'
-   - cron: '14 1 * * *'
+    - cron: '0 */6 * * *'
 
 jobs:
   build:
