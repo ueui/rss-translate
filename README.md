@@ -61,3 +61,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source038 [http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d7c28d0f7d55cff30db702.xml](http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d7c28d0f7d55cff30db702.xml) -> [SNS発ニュース_ORICON_NEWS](rss/SNS%E7%99%BA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9_ORICON_NEWS)
  - source039 [http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d7c2b5837b0b0b47087f34.xml](http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d7c2b5837b0b0b47087f34.xml) -> [マンガ特集_ORICON_NEWS](rss/%E3%83%9E%E3%83%B3%E3%82%AC%E7%89%B9%E9%9B%86_ORICON_NEWS)
  - source040 [http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d824a7dffb2fb8b6075d63.xml](http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d824a7dffb2fb8b6075d63.xml) -> [US Supreme Court](rss/US%20Supreme%20Court)
+ - source041 [https://www.nature.com/nature.rss](https://www.nature.com/nature.rss) -> [NATURE BRIEFING](rss/NATURE%20BRIEFING)
