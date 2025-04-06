@@ -62,3 +62,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source039 [http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d824a7dffb2fb8b6075d63.xml](http://fetchrss.com/rss/67d7a50657856d2fd2016ed267d824a7dffb2fb8b6075d63.xml) -> [US Supreme Court](rss/US%20Supreme%20Court)
  - source040 [https://www.nature.com/nature.rss](https://www.nature.com/nature.rss) -> [NATURE BRIEFING](rss/NATURE%20BRIEFING)
  - source041 [http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml](http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml) -> [パパ活_検索結果_日刊SPA!](rss/%E3%83%91%E3%83%91%E6%B4%BB_%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C_%E6%97%A5%E5%88%8ASPA%21)
+ - source042 [https://www.smithsonianmag.com/rss/smart-news/](https://www.smithsonianmag.com/rss/smart-news/) -> [Smithsonianmag Smart News](rss/Smithsonianmag%20Smart%20News)
