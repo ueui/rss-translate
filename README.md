@@ -64,4 +64,5 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source041 [https://politepol.com/fd/72TxPeJk9t5i.xml](https://politepol.com/fd/72TxPeJk9t5i.xml) -> [Tall Urban News CTBUH](rss/Tall%20Urban%20News%20CTBUH)
  - source042 [https://politepol.com/fd/fnaVVKc48n2j.xml](https://politepol.com/fd/fnaVVKc48n2j.xml) -> [US Supreme Court BBC News](rss/US%20Supreme%20Court%20BBC%20News)
  - source043 [https://muddywatersresearch.com/feed/?post_type=reports](https://muddywatersresearch.com/feed/?post_type=reports) -> [Muddy Waters Research](rss/Muddy%20Waters%20Research)
- - source044 [https://www.smithsonianmag.com/rss/smart-news/](https://www.smithsonianmag.com/rss/smart-news/) -> [Smithsonianmag Smart News](rss/Smithsonianmag%20Smart%20News)
+ - source044 [https://mastodon.social/@lawrencelry.rss](https://mastodon.social/@lawrencelry.rss) -> [mastodon_lawrencelry](rss/mastodon_lawrencelry)
+ - source045 [https://www.usgs.gov/news/national-news-release/feed](https://www.usgs.gov/news/national-news-release/feed) -> [National News Releases US Geological Survey](rss/National%20News%20Releases%20US%20Geological%20Survey)
