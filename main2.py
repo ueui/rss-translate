@@ -9,18 +9,18 @@ from rfeed import *
 import feedparser
 from urllib import parse
 
-# 计算字符串的 MD5 值
+# Calculate MD5 value of a string
 def get_md5_value(src):
     return hashlib.md5(src.encode('utf-8')).hexdigest()
 
-# 获取 RSS 条目的发布时间
+# Get RSS entry publication time
 def get_time(entry):
     try:
         return datetime.datetime(*entry.published_parsed[:6])
     except (AttributeError, TypeError):
         return datetime.datetime.now()
 
-# 获取 RSS 源的副标题
+# Get RSS feed subtitle
 def get_subtitle(feed):
     return getattr(feed, 'subtitle', '')
 
@@ -41,10 +41,10 @@ class GoogleTran:
             return content
         try:
             result = self.client.translate(content, target=self.target, source=self.source)
-            return result.translatedText if result else ""
+            return result.translatedText if result else content
         except Exception as e:
             print(f"Translation error: {e}")
-            return ""
+            return content
 
     def get_new_content(self, max_items=2):
         if not self.feed or not self.feed.entries:
@@ -52,27 +52,31 @@ class GoogleTran:
         item_list = []
         max_items = min(max_items, len(self.feed.entries))
         for entry in self.feed.entries[:max_items]:
-            # 检查 summary 是否存在，否则尝试 description，最后使用空字符串
+            # Handle missing title
+            title = getattr(entry, 'title', 'No Title')
+            # Handle missing link
+            link = getattr(entry, 'link', '')
+            # Handle missing summary/description
             description_text = getattr(entry, 'summary', getattr(entry, 'description', ''))
             item = Item(
-                title=self.translate(entry.title),
-                link=entry.link,
+                title=self.translate(title),
+                link=link,
                 description=self.translate(description_text),
-                guid=Guid(entry.link),
+                guid=Guid(link) if link else Guid(get_md5_value(title + description_text)),
                 pubDate=get_time(entry)
             )
             item_list.append(item)
         feed = self.feed.feed
         new_feed = Feed(
-            title=self.translate(feed.title),
-            link=feed.link,
+            title=self.translate(getattr(feed, 'title', 'Untitled Feed')),
+            link=getattr(feed, 'link', ''),
             description=self.translate(get_subtitle(feed)),
             lastBuildDate=get_time(feed),
             items=item_list
         )
         return new_feed.rss()
 
-# 读取和解析 test.ini
+# Read and parse test.ini
 with open('test.ini', 'r', encoding='utf-8') as f:
     ini_data = parse.unquote(f.read())
 config = configparser.ConfigParser()
@@ -89,7 +93,7 @@ def get_translation_config(section):
     action = get_cfg(section, 'action')
     return ('proxy', 'proxy') if action == 'proxy' else action.split('->') if '->' in action else ('auto', 'zh-CN')
 
-# 创建输出目录
+# Create output directory
 BASE = get_cfg('cfg', 'base')
 os.makedirs(BASE, exist_ok=True)
 
@@ -113,16 +117,16 @@ def process_section(section):
     else:
         print(f"Skipped {url} due to fetch or translation failure")
 
-# 处理每个 RSS 源
+# Process each RSS source
 for section in sections[1:]:
     process_section(section)
     print(config.items(section))
 
-# 保存更新后的配置
+# Save updated configuration
 with open('test.ini', 'w', encoding='utf-8') as configfile:
     config.write(configfile)
 
-# 更新 README.md
+# Update README.md
 def update_readme(file_path="README.md"):
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
