@@ -52,10 +52,12 @@ class GoogleTran:
         item_list = []
         max_items = min(max_items, len(self.feed.entries))
         for entry in self.feed.entries[:max_items]:
+            # 检查 summary 是否存在，否则尝试 description，最后使用空字符串
+            description_text = getattr(entry, 'summary', getattr(entry, 'description', ''))
             item = Item(
                 title=self.translate(entry.title),
                 link=entry.link,
-                description=self.translate(entry.summary),
+                description=self.translate(description_text),
                 guid=Guid(entry.link),
                 pubDate=get_time(entry)
             )
