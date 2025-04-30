@@ -52,8 +52,8 @@ class GoogleTran:
         item_list = []
         max_items = min(max_items, len(self.feed.entries))
         for entry in self.feed.entries[:max_items]:
-            # Handle missing title
-            title = getattr(entry, 'title', 'No Title')
+            # Handle missing title by using empty string
+            title = getattr(entry, 'title', '')
             # Handle missing link
             link = getattr(entry, 'link', '')
             # Handle missing summary/description
