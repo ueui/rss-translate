@@ -67,3 +67,6 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source044 [https://mastodon.social/@lawrencelry.rss](https://mastodon.social/@lawrencelry.rss) -> [mastodon_lawrencelry](rss/mastodon_lawrencelry)
  - source045 [https://www.usgs.gov/news/national-news-release/feed](https://www.usgs.gov/news/national-news-release/feed) -> [National News Releases US Geological Survey](rss/National%20News%20Releases%20US%20Geological%20Survey)
  - source046 [https://www.smithsonianmag.com/rss/smart-news/](https://www.smithsonianmag.com/rss/smart-news/) -> [Smithsonianmag Smart News](rss/Smithsonianmag%20Smart%20News)
+ - source047 [https://politepol.com/fd/8Tigf8zNTwwv.xml](https://politepol.com/fd/8Tigf8zNTwwv.xml) -> [Intelligence Lab Publication Library Knight Frank](rss/Intelligence%20Lab%20Publication%20Library%20Knight%20Frank)
+ - source048 [https://politepol.com/fd/981P7slL9Twv.xml](https://politepol.com/fd/981P7slL9Twv.xml) -> [The Wealth Report Knight Frank](rss/The%20Wealth%20Report%20Knight%20Frank)
+ - source049 [https://politepol.com/fd/QqZjRiPuGPVX.xml](https://politepol.com/fd/QqZjRiPuGPVX.xml) -> [The Marbella Property and Lifestyle Blog](rss/The%20Marbella%20Property%20and%20Lifestyle%20Blog)
