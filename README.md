@@ -70,4 +70,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source047 [https://politepol.com/fd/8Tigf8zNTwwv.xml](https://politepol.com/fd/8Tigf8zNTwwv.xml) -> [Intelligence Lab Publication Library Knight Frank](rss/Intelligence%20Lab%20Publication%20Library%20Knight%20Frank)
  - source048 [https://politepol.com/fd/981P7slL9Twv.xml](https://politepol.com/fd/981P7slL9Twv.xml) -> [The Wealth Report Knight Frank](rss/The%20Wealth%20Report%20Knight%20Frank)
  - source049 [https://politepol.com/fd/QqZjRiPuGPVX.xml](https://politepol.com/fd/QqZjRiPuGPVX.xml) -> [The Marbella Property and Lifestyle Blog](rss/The%20Marbella%20Property%20and%20Lifestyle%20Blog)
- - source050 [https://www.sciencedaily.com/rss/all.xml](https://www.sciencedaily.com/rss/all.xml) -> [science daily](rss/science%20daily)
+ - source050 [https://www.sciencedaily.com/rss/top.xml](https://www.sciencedaily.com/rss/top.xml) -> [sciencedaily top](rss/sciencedaily%20top)
