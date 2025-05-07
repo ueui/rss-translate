@@ -72,3 +72,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source049 [https://politepol.com/fd/QqZjRiPuGPVX.xml](https://politepol.com/fd/QqZjRiPuGPVX.xml) -> [The Marbella Property and Lifestyle Blog](rss/The%20Marbella%20Property%20and%20Lifestyle%20Blog)
  - source050 [https://www.sciencedaily.com/rss/top.xml](https://www.sciencedaily.com/rss/top.xml) -> [sciencedaily top](rss/sciencedaily%20top)
  - source051 [https://hnrss.org/newest?count=50&points=100](https://hnrss.org/newest?count=50&points=100) -> [Hacker News Newest](rss/Hacker%20News%20Newest)
+ - source052 [gnn.gamer.com.tw/rss.xml](gnn.gamer.com.tw/rss.xml) -> [巴哈姆特_GNN_新聞網](rss/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9_GNN_%E6%96%B0%E8%81%9E%E7%B6%B2)
