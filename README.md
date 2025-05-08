@@ -73,4 +73,3 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source050 [https://www.sciencedaily.com/rss/top.xml](https://www.sciencedaily.com/rss/top.xml) -> [sciencedaily top](rss/sciencedaily%20top)
  - source051 [https://hnrss.org/newest?count=50&points=100](https://hnrss.org/newest?count=50&points=100) -> [Hacker News Newest](rss/Hacker%20News%20Newest)
  - source052 [https://gnn.gamer.com.tw/rss.xml](https://gnn.gamer.com.tw/rss.xml) -> [巴哈姆特_GNN_新聞網](rss/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9_GNN_%E6%96%B0%E8%81%9E%E7%B6%B2)
- - source053 [https://www.aei.org/rss](https://www.aei.org/rss) -> [美国企业研究所-AEI](rss/%E7%BE%8E%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%A0%94%E7%A9%B6%E6%89%80-AEI)
