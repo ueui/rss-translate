@@ -74,4 +74,3 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source051 [https://hnrss.org/newest?count=50&points=100](https://hnrss.org/newest?count=50&points=100) -> [Hacker News Newest](rss/Hacker%20News%20Newest)
  - source052 [https://gnn.gamer.com.tw/rss.xml](https://gnn.gamer.com.tw/rss.xml) -> [巴哈姆特_GNN_新聞網](rss/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9_GNN_%E6%96%B0%E8%81%9E%E7%B6%B2)
  - source053 [https://politepol.com/fd/NjxHZtldG2if.xml](https://politepol.com/fd/NjxHZtldG2if.xml) -> [Lifeboat News The Blog Safeguarding Humanity](rss/Lifeboat%20News%20The%20Blog%20Safeguarding%20Humanity)
- - source054 [https://www.spglobal.com/spdji/en/rss/rss-details/?rssFeedName=market-commentary](https://www.spglobal.com/spdji/en/rss/rss-details/?rssFeedName=market-commentary) -> [SP Dow Jones Indices Market Commentary](rss/SP%20Dow%20Jones%20Indices%20Market%20Commentary)
