@@ -75,3 +75,5 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source052 [https://gnn.gamer.com.tw/rss.xml](https://gnn.gamer.com.tw/rss.xml) -> [巴哈姆特_GNN_新聞網](rss/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9_GNN_%E6%96%B0%E8%81%9E%E7%B6%B2)
  - source053 [https://politepol.com/fd/NjxHZtldG2if.xml](https://politepol.com/fd/NjxHZtldG2if.xml) -> [Lifeboat News The Blog Safeguarding Humanity](rss/Lifeboat%20News%20The%20Blog%20Safeguarding%20Humanity)
  - source054 [http://fetchrss.com/rss/6091364872635734406c61f268281e0204e3b76427070163.xml](http://fetchrss.com/rss/6091364872635734406c61f268281e0204e3b76427070163.xml) -> [Intelligence Lab Knight Frank](rss/Intelligence%20Lab%20Knight%20Frank)
+ - source055 [https://politepol.com/fd/OrUMJqDSzBbh.xml](https://politepol.com/fd/OrUMJqDSzBbh.xml) -> [Y Combinator Email Campaign Archive](rss/Y%20Combinator%20Email%20Campaign%20Archive)
+ - source056 [https://politepol.com/fd/Ph2CzpZCj4KE.xml](https://politepol.com/fd/Ph2CzpZCj4KE.xml) -> [a16z news content](rss/a16z%20news%20content)
