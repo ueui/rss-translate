@@ -69,6 +69,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source046 [https://www.smithsonianmag.com/rss/smart-news/](https://www.smithsonianmag.com/rss/smart-news/) -> [Smithsonianmag Smart News](rss/Smithsonianmag%20Smart%20News)
  - source047 [https://politepol.com/fd/8Tigf8zNTwwv.xml](https://politepol.com/fd/8Tigf8zNTwwv.xml) -> [Intelligence Lab Publication Library Knight Frank](rss/Intelligence%20Lab%20Publication%20Library%20Knight%20Frank)
  - source048 [https://politepol.com/fd/981P7slL9Twv.xml](https://politepol.com/fd/981P7slL9Twv.xml) -> [The Wealth Report Knight Frank](rss/The%20Wealth%20Report%20Knight%20Frank)
- - source049 [https://perezhilton.com/category/controversy/feed](https://perezhilton.com/category/controversy/feed) -> [Controversy Archives - Perez Hilton](rss/Controversy%20Archives%20-%20Perez%20Hilton)
- - source050 [https://perezhilton.com/category/love-line/feed](https://perezhilton.com/category/love-line/feed) -> [Love Line Archives - Perez Hilton](rss/Love%20Line%20Archives%20-%20Perez%20Hilton)
- - source051 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
+ - source049 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
