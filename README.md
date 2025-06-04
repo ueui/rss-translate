@@ -70,4 +70,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source047 [https://politepol.com/fd/8Tigf8zNTwwv.xml](https://politepol.com/fd/8Tigf8zNTwwv.xml) -> [Intelligence Lab Publication Library Knight Frank](rss/Intelligence%20Lab%20Publication%20Library%20Knight%20Frank)
  - source048 [https://politepol.com/fd/981P7slL9Twv.xml](https://politepol.com/fd/981P7slL9Twv.xml) -> [The Wealth Report Knight Frank](rss/The%20Wealth%20Report%20Knight%20Frank)
  - source049 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
- - source050 [https://www.gamerpower.com/rss/games](https://www.gamerpower.com/rss/games) -> [GamerPower Giveaways Free Full Games](rss/GamerPower%20Giveaways%20Free%20Full%20Games)
+ - source050 [https://politepol.com/fd/yVmdKUpodvQk.xml](https://politepol.com/fd/yVmdKUpodvQk.xml) -> [Games Free For a Limited Time Indie Game Bundles](rss/Games%20Free%20For%20a%20Limited%20Time%20Indie%20Game%20Bundles)
