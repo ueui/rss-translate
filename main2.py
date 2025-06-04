@@ -52,12 +52,19 @@ class GoogleTran:
         item_list = []
         max_items = min(max_items, len(self.feed.entries))
         for entry in self.feed.entries[:max_items]:
-            # Handle missing title by using empty string
             title = getattr(entry, 'title', '')
-            # Handle missing link
             link = getattr(entry, 'link', '')
-            # Handle missing summary/description
             description_text = getattr(entry, 'summary', getattr(entry, 'description', ''))
+            # Extract image URL from media:content
+            image_url = ''
+            if hasattr(entry, 'media_content') and entry.media_content:
+                for media in entry.media_content:
+                    if media.get('type', '').startswith('image/'):
+                        image_url = media.get('url', '')
+                        break
+            # Append image URL as HTML img tag to description
+            if image_url:
+                description_text += f'<br><img src="{image_url}" alt="Image" />'
             item = Item(
                 title=self.translate(title),
                 link=link,
