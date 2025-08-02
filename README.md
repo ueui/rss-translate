@@ -78,4 +78,5 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source055 [https://www.tandfonline.com/feed/rss/rics20](https://www.tandfonline.com/feed/rss/rics20) -> [Information Communication Society](rss/Information%20Communication%20Society)
  - source056 [https://www.tandfonline.com/feed/rss/rprn20](https://www.tandfonline.com/feed/rss/rprn20) -> [Porn Studies](rss/Porn%20Studies)
  - source057 [https://politepol.com/fd/PqSPOcclzogO.xml](https://politepol.com/fd/PqSPOcclzogO.xml) -> [Tech News Fortune](rss/Tech%20News%20Fortune)
- - source058 [https://gamerpower.com/rss/games ](https://gamerpower.com/rss/games ) -> [GamerPower Giveaways](rss/GamerPower%20Giveaways)
+ - source058 [https://gamerpower.com/rss/games](https://gamerpower.com/rss/games) -> [GamerPower Giveaways](rss/GamerPower%20Giveaways)
+ - source059 [https://fetchrss.com/feed/YJE2SHI0QGHyaIzCiqOYlRsU.rss](https://fetchrss.com/feed/YJE2SHI0QGHyaIzCiqOYlRsU.rss) -> [Archive Science](rss/Archive%20Science)
