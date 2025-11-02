@@ -80,3 +80,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source057 [https://politepol.com/fd/PqSPOcclzogO.xml](https://politepol.com/fd/PqSPOcclzogO.xml) -> [Tech News Fortune](rss/Tech%20News%20Fortune)
  - source058 [https://gamerpower.com/rss/games](https://gamerpower.com/rss/games) -> [GamerPower Giveaways](rss/GamerPower%20Giveaways)
  - source059 [https://fetchrss.com/feed/YJE2SHI0QGHyaIzCiqOYlRsU.rss](https://fetchrss.com/feed/YJE2SHI0QGHyaIzCiqOYlRsU.rss) -> [Archive Science](rss/Archive%20Science)
+ - source060 [https://www.sequoiacap.com/feed](https://www.sequoiacap.com/feed) -> [sequoia Capital](rss/sequoia%20Capital)
