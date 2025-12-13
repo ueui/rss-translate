@@ -70,7 +70,7 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source047 [https://politepol.com/fd/8Tigf8zNTwwv.xml](https://politepol.com/fd/8Tigf8zNTwwv.xml) -> [Intelligence Lab Publication Library Knight Frank](rss/Intelligence%20Lab%20Publication%20Library%20Knight%20Frank)
  - source048 [https://politepol.com/fd/981P7slL9Twv.xml](https://politepol.com/fd/981P7slL9Twv.xml) -> [The Wealth Report Knight Frank](rss/The%20Wealth%20Report%20Knight%20Frank)
  - source049 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
- - source050 [https://politepol.com/fd/yVmdKUpodvQk.xml](https://politepol.com/fd/yVmdKUpodvQk.xml) -> [Games Free For a Limited Time Indie Game Bundles](rss/Games%20Free%20For%20a%20Limited%20Time%20Indie%20Game%20Bundles)
+ - source050 [https://www.sequoiacap.com/feed](https://www.sequoiacap.com/feed) -> [sequoia Capital](rss/sequoia%20Capital)
  - source051 [https://www.tandfonline.com/feed/rss/mijp20](https://www.tandfonline.com/feed/rss/mijp20) -> [International Journal of Political Economy](rss/International%20Journal%20of%20Political%20Economy)
  - source052 [https://content.apa.org/journals/apl.rss](https://content.apa.org/journals/apl.rss) -> [Journal of Applied Psychology](rss/Journal%20of%20Applied%20Psychology)
  - source053 [https://www.tandfonline.com/feed/rss/vjrl20](https://www.tandfonline.com/feed/rss/vjrl20) -> [The Journal of Psychology](rss/The%20Journal%20of%20Psychology)
@@ -80,4 +80,3 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source057 [https://politepol.com/fd/PqSPOcclzogO.xml](https://politepol.com/fd/PqSPOcclzogO.xml) -> [Tech News Fortune](rss/Tech%20News%20Fortune)
  - source058 [https://gamerpower.com/rss/games](https://gamerpower.com/rss/games) -> [GamerPower Giveaways](rss/GamerPower%20Giveaways)
  - source059 [https://fetchrss.com/feed/YJE2SHI0QGHyaIzCiqOYlRsU.rss](https://fetchrss.com/feed/YJE2SHI0QGHyaIzCiqOYlRsU.rss) -> [Archive Science](rss/Archive%20Science)
- - source060 [https://www.sequoiacap.com/feed](https://www.sequoiacap.com/feed) -> [sequoia Capital](rss/sequoia%20Capital)
