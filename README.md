@@ -39,7 +39,7 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source016 [https://www.tandfonline.com/feed/rss/rics20](https://www.tandfonline.com/feed/rss/rics20) -> [Information Communication Society](rss/Information%20Communication%20Society)
  - source017 [https://politepol.com/fd/Ph2CzpZCj4KE.xml](https://politepol.com/fd/Ph2CzpZCj4KE.xml) -> [a16z news content](rss/a16z%20news%20content)
  - source018 [https://onlinelibrary.wiley.com/feed/15405907/most-recent](https://onlinelibrary.wiley.com/feed/15405907/most-recent) -> [American Journal of Political Science](rss/American%20Journal%20of%20Political%20Science)
- - source019 [https://politepol.com/fd/C8JCiAISyeUs.xml](https://politepol.com/fd/C8JCiAISyeUs.xml) -> [Forbes_Daily](rss/Forbes_Daily)
+ - source019 [http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml](http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml) -> [パパ活_検索結果_日刊SPA!](rss/%E3%83%91%E3%83%91%E6%B4%BB_%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C_%E6%97%A5%E5%88%8ASPA%21)
  - source020 [https://www.tandfonline.com/feed/rss/vjrl20](https://www.tandfonline.com/feed/rss/vjrl20) -> [The Journal of Psychology](rss/The%20Journal%20of%20Psychology)
  - source021 [https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/series/us-morning-briefing/rss.xml](https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/series/us-morning-briefing/rss.xml) -> [NYT_The_Morning_Newsletter](rss/NYT_The_Morning_Newsletter)
  - source022 [https://politepol.com/fd/QqZjRiPuGPVX.xml](https://politepol.com/fd/QqZjRiPuGPVX.xml) -> [The Marbella Property and Lifestyle Blog](rss/The%20Marbella%20Property%20and%20Lifestyle%20Blog)
@@ -60,4 +60,3 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source037 [https://www.sequoiacap.com/feed](https://www.sequoiacap.com/feed) -> [sequoia Capital](rss/sequoia%20Capital)
  - source038 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
  - source039 [https://politepaul.com/fd/TvvoXIu1dBzU.xml](https://politepaul.com/fd/TvvoXIu1dBzU.xml) -> [NATURE BRIEFING](rss/NATURE%20BRIEFING)
- - source040 [http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml](http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml) -> [パパ活_検索結果_日刊SPA!](rss/%E3%83%91%E3%83%91%E6%B4%BB_%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C_%E6%97%A5%E5%88%8ASPA%21)
