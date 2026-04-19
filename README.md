@@ -56,6 +56,4 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source033 [https://gnn.gamer.com.tw/rss.xml](https://gnn.gamer.com.tw/rss.xml) -> [巴哈姆特_GNN_新聞網](rss/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9_GNN_%E6%96%B0%E8%81%9E%E7%B6%B2)
  - source034 [https://politepol.com/fd/NjxHZtldG2if.xml](https://politepol.com/fd/NjxHZtldG2if.xml) -> [Lifeboat News The Blog Safeguarding Humanity](rss/Lifeboat%20News%20The%20Blog%20Safeguarding%20Humanity)
  - source035 [https://politepol.com/fd/8Tigf8zNTwwv.xml](https://politepol.com/fd/8Tigf8zNTwwv.xml) -> [Intelligence Lab Publication Library Knight Frank](rss/Intelligence%20Lab%20Publication%20Library%20Knight%20Frank)
- - source036 [https://politepol.com/fd/OrUMJqDSzBbh.xml](https://politepol.com/fd/OrUMJqDSzBbh.xml) -> [Y Combinator Email Campaign Archive](rss/Y%20Combinator%20Email%20Campaign%20Archive)
- - source037 [https://www.sequoiacap.com/feed](https://www.sequoiacap.com/feed) -> [sequoia Capital](rss/sequoia%20Capital)
- - source038 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
+ - source036 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
