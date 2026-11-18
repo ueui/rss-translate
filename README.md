@@ -39,7 +39,7 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source016 [https://www.tandfonline.com/feed/rss/rics20](https://www.tandfonline.com/feed/rss/rics20) -> [Information Communication Society](rss/Information%20Communication%20Society)
  - source017 [https://siftrss.com/f/LbvpaQbPYJQ](https://siftrss.com/f/LbvpaQbPYJQ) -> [Celebrity Legal & Lawsuits](rss/Celebrity%20Legal%20%26%20Lawsuits)
  - source018 [https://onlinelibrary.wiley.com/feed/15405907/most-recent](https://onlinelibrary.wiley.com/feed/15405907/most-recent) -> [American Journal of Political Science](rss/American%20Journal%20of%20Political%20Science)
- - source019 [http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml](http://fetchrss.com/rss/6091364872635734406c61f267ea8e8a478137c6c108af72.xml) -> [パパ活_検索結果_日刊SPA!](rss/%E3%83%91%E3%83%91%E6%B4%BB_%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C_%E6%97%A5%E5%88%8ASPA%21)
+ - source019 [https://mastodon.social/@lawrencelry.rss](https://mastodon.social/@lawrencelry.rss) -> [mastodon_lawrencelry](rss/mastodon_lawrencelry)
  - source020 [https://www.tandfonline.com/feed/rss/vjrl20](https://www.tandfonline.com/feed/rss/vjrl20) -> [The Journal of Psychology](rss/The%20Journal%20of%20Psychology)
  - source021 [https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/series/us-morning-briefing/rss.xml](https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/series/us-morning-briefing/rss.xml) -> [NYT_The_Morning_Newsletter](rss/NYT_The_Morning_Newsletter)
  - source022 [https://politepaul.com/fd/PReP6Xxf461B.xml](https://politepaul.com/fd/PReP6Xxf461B.xml) -> [NATURE BRIEFING](rss/NATURE%20BRIEFING)
@@ -51,4 +51,3 @@ next find the translated link in [https://talengu.github.io/rss-translate/](http
  - source028 [https://www.sciencedaily.com/rss/top.xml](https://www.sciencedaily.com/rss/top.xml) -> [sciencedaily top](rss/sciencedaily%20top)
  - source029 [https://hnrss.org/newest?count=50&points=100](https://hnrss.org/newest?count=50&points=100) -> [Hacker News Newest](rss/Hacker%20News%20Newest)
  - source030 [https://gnn.gamer.com.tw/rss.xml](https://gnn.gamer.com.tw/rss.xml) -> [巴哈姆特_GNN_新聞網](rss/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9_GNN_%E6%96%B0%E8%81%9E%E7%B6%B2)
- - source031 [https://mastodon.social/@lawrencelry.rss](https://mastodon.social/@lawrencelry.rss) -> [mastodon_lawrencelry](rss/mastodon_lawrencelry)
